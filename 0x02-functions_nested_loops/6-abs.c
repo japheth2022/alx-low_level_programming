@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * _abs - returns absolute value of a number
- * @int: parameter
+ * @n: parameter
  * Return: absolute value of a number
  */
 
 
-int _abs(int)
+int _abs(int n)
 {
 	if (n < 0)
 	n = -n;
