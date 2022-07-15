@@ -7,24 +7,16 @@
  */
 
 
-
-
-
 void reverse_array(int *a, int n)
 {
-	int *p, aux, i, k;
+	int i;
 
-	p = a;
+	reverse_array[];
 
-	for (i = 0; i < n; i++)
-	p++;
-	for (k = 0; k < n / 2; k++)
+	for (i = n - 1; i >= 0; i--)
 	{
-		aux = a[k];
-		a[k] = *p;
-		*p = aux;
-		p--;
+		reverse_array.push(a[i]);
 	}
-
-
+	return (reverse_array);
 }
+
