@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strncat - function to append characters
  * @dest: parameter 1
