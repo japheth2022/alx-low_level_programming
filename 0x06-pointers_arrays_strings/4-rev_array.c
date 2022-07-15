@@ -3,20 +3,24 @@
 /**
  * reverse_array - reverses elements of array
  * @a: an array
- * @n : an eement of an array
+ * @n : an element of an array
  */
 
 
 void reverse_array(int *a, int n)
 {
-	int i;
+	int *p, aux, i, k;
 
-	reverse_array[];
+	p = a;
 
-	for (i = n - 1; i >= 0; i--)
+	for (i = 0; i < n; i++)
+		p++;
+	for (k = 0; k < n / 2; k++)
 	{
-		reverse_array.push(a[i]);
+		aux = a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
 	}
-	return (reverse_array);
 }
 
