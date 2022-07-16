@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - prints elements of an array
+ * Return: always 0
+ */
 
 int main(void)
 {
