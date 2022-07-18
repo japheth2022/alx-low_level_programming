@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+
+
 /**
  * _strchr - character search function
  * @s: string
@@ -13,18 +16,16 @@
 
 
 char *_strchr(char *s, char c)
-
 {
-	int a = 0, b;
+	char *pch;
 
-	while (s[a])
-
-		a++;
-	for (b = 0; b <= a; b++)
+	pch = strchr(s, 'c');
+	while (pch != NULL)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+	return (pch);
+	pch = strchr(pch + 1, 's');
 	}
 	return (0);
+
 }
+
