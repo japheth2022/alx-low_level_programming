@@ -17,15 +17,16 @@
 
 char *_strchr(char *s, char c)
 {
-	char *pch;
-
-	pch = strchr(s, 'c');
-	while (pch != NULL)
+	int a = 0, b;
+	while (s[a])
+	a++;
 	{
-	return (pch);
-	pch = strchr(pch + 1, 's');
-	}
-	return (0);
+		if (c === s[a])
+		s += b;
+		return (s);
 
+
+	}
+	return (NULL);
 }
 
