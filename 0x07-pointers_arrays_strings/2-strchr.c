@@ -19,10 +19,10 @@ char *_strchr(char *s, char c)
 {
 	int a = 0, b;
 
-	for (b = 0 ; b <= a; b++)
+	for (b = 0 ; b < a; b++)
 	{
-		if (c == s[b])
-		s += b;
+		if ('c' == s[b])
+		*s += b;
 		return (s);
 	}
 	return ('\0');
