@@ -29,7 +29,7 @@ int _sqrt(int n, int i)
 
 	if (square == n)
 		return (i);
-	if (square < n)
+	if (square > n)
 		return (-1);
 	return (_sqrt(n, i + 1));
 }
