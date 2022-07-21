@@ -19,9 +19,10 @@ int _sqrt_recursion(int n)
 	return (_sqrt(n, 1));
 }
 /**
- * -sqrt - recursive square root
+ * _sqrt -> recursive square root function
  * @n: integer
  * @i: iterator
+ * Return: number
  */
 int _sqrt(int n, int i)
 {
