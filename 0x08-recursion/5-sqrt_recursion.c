@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 	return (_sqrt(n, 1));
 }
 /**
- * -sqrt - function that finds square root
+ * -sqrt - recursive square root
  * @n: integer
  * @i: iterator
  */
