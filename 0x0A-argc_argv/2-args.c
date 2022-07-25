@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	for (count = 0; count < argc; count++)
 	{
 		printf("argv index %d is = %s\n", count, argv[count]);
+		printf("\n");
 		return (0);
 	}
 }
