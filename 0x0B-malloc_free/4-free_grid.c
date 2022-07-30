@@ -1,9 +1,9 @@
 #include "main.h"
-#include <stdlib.h> 
+#include <stdlib.h>
 /**
- * free_grid - freeing memory allocation
+ * free_grid - removing memory allocation
  * @grid: grid to be freed
- * @height: height of grid
+ * @height: height of matrix
  * Return: nothing
  */
 void free_grid(int **grid, int height)
