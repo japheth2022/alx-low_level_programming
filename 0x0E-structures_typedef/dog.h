@@ -12,7 +12,7 @@ int _putchar (char c);
  * Description: dog with name, age, and owner's name.
 */
 
-struct dog
+typedef struct dog
 
 {
 
@@ -21,7 +21,7 @@ struct dog
 	float age;
 
 	char *owner;
-};
+} dog_t;
 
 
 
