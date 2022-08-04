@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include "function_pointers.h"
 
 /**
@@ -10,14 +10,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("%s\n", name);
-}
-
-int main(void)
-{
-	char variable = "name";
-
-	print_name(variable, &print_name);
-
-	return (0);
+	if (name && f)
+		f(name);
 }
