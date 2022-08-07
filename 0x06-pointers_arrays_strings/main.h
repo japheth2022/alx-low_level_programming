@@ -10,7 +10,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 void print_number(int n);
-
+char *_strchr(char *s, char c);
 
 
 
