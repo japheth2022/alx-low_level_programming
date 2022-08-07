@@ -1,16 +1,33 @@
-#include "main.h"
 #include <stdlib.h>
+
+#include <stdio.h>
+
+#include "main.h"
+
+
+
 /**
- * free_grid - removing memory allocation
- * @grid: grid to be freed
- * @height: height of matrix
- * Return: nothing
+ * free_grid - free memory dynamically allocated
+ * @grid: pointer to 2-D array
+ * @row: row of the array
+ * Created by: Sanctus-Peter
+ * cc: 23rd July, 2022
  */
-void free_grid(int **grid, int height)
+
+
+
+void free_grid(int **grid, int row)
+
 {
+
 	int i;
 
-	for (i = 0; i < height; i++)
-		free(grid[i]);
+
+
+	for (i = 0; i < row; i++)
+
+	free(grid[i]);
+
 	free(grid);
+
 }
