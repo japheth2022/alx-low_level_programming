@@ -40,6 +40,7 @@ int **alloc_grid(int col, int row)
 	grid[i] = malloc(col * sizeof(**grid));
 
 	if (grid[i] == 0)
+	{
 
 	while (i--)
 
