@@ -1,13 +1,11 @@
-#include <stdio.h>
-
 #include "main.h"
 
 
 
 /**
- * print_diagsums - print the sum of leading diagonal
- * @a: pointer to the array
- * @size: size of the array
+ * print_diagsums - print sums of diagonals in matrix
+ * @a: matrix
+ * @size: size of matrix
  */
 
 
@@ -15,38 +13,40 @@
 void print_diagsums(int *a, int size);
 
 {
-	int i, sumDiag = 0, sumTrailDiag = 0;
 
-	for (i = 0; i < size * size; i++)
+	int diagonal_sum_1 = 0;
+
+	int diagonal_sum_2 = 0;
+
+	int row, i;
+
+
+
+	for (row = 0; row < size; row++)
 
 	{
 
-	if ((i % (size + 1) == 0) && (i % (size - 1) == 0)
+	i = (row * size) + row;
 
-	&& i && i < size * size - 2)
-
-	{
-
-	sumDiag += a[i];
-
-	sumTrailDiag += a[i];
-
-	}
-
-	else if (i % (size + 1) == 0)
-
-	sumDiag += a[i];
-
-	else if (i % (size - 1) == 0 && i && i < size * size - 2)
-
-	sumTrailDiag += a[i];
+	diagonal_sum_1 += a[i];
 
 	}
 
 
 
-	printf("%d, %d", sumDiag, sumTrailDiag);
+	for (row = 1; row <= size; row++)
 
-	putchar('\n');
+	{
+
+	i = (row * size) - row;
+
+	diagonal_sum_2 += a[i];
+
+	}
+
+
+	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
+
+
 
 }
