@@ -1,11 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * the_hare - function
+ * the_tortoise - function
  * Return: nothing
  */
 
-void the_tortoise(void) __attribute__ ((constructor));
+void the_tortoise(void);
 
 void the_tortoise(void)
 
