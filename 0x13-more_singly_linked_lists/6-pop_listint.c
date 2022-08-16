@@ -5,8 +5,7 @@
   * @head: double pointer to 1st node in list
   * Return: Head node's data
   */
-
- int pop_listint(listint_t **head)
+int pop_listint(listint_t **head)
 
 {
 	listint_t *temp;
