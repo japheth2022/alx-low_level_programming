@@ -1,46 +1,46 @@
-#include "main.h"
+#include "common.h"
+
+
 
 /**
- * print_binary - function
- * @n:number to convert
- * Description: Function to print binary conv of number given
- * Return: converted number
+ * print_binary - prints binary
+ * @n: number
+ * Return: binary
  */
 
 void print_binary(unsigned long int n)
+
 {
-	unsigned long int i = 0;
 
-	if (n == 0)
+	int len;
 
-	_putchar(n + '0');
+	ulint buff, mask = 1;
 
-	while (n > 0)
 
-	{
 
-	if ((n & 1) == 0)
-	{
+	for (len = 0, buff = n; buff > 0; len++)
 
-	i += (i + 0);
+	buff >>= 1;
 
-	n = n >> 1;
 
-	_putchar('0');
 
-	}
+	if (--len > 0)
 
-	else
+	mask <<= len;
+
+
+
+	for (; mask > 0; mask >>= 1)
 
 	{
 
-	i += (i + 1);
-
-	n = n >> 1;
+	if (n & mask)
 
 	_putchar('1');
 
-	}
+	else
+
+	_putchar('0');
 
 	}
 
