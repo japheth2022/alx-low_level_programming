@@ -32,11 +32,11 @@ int main(void)
 	}
 	if (n % 10 == 0)
 	{
-		printf("0");
+	printf("0");
 	}
-	if (n % 10 > 5 )
+	if (n % 10 > 5)
 	{
-		printf("greater than 5");
+	printf("greater than 5");
 	}
 	printf("\n");
 
