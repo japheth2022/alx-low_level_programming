@@ -26,6 +26,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	printf("last dgit of %d is", n);
+
+	if (n < 0)
+	{
+		printf("negative");
+	}
 	if (n % 10 < 5)
 	{
 		printf("less than 5");
