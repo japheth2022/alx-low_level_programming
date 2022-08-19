@@ -31,9 +31,9 @@ int main(void)
 	{
 		printf("and is greater than 5");
 	}
-	if (v != 0 && v < 6)
+	else if (v != 0 && v < 6)
 	{
-	printf("and is less than 6 but not 0");
+	printf("and is less than 6 and  not 0");
 	}
 	else
 	{
