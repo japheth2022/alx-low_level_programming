@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	int len;
 
-	ulint buff, mask = 1;
+	uint buff, mask = 1;
 
 
 
