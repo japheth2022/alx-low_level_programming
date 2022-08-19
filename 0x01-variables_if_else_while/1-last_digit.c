@@ -29,11 +29,11 @@ int main(void)
 
 	if (v > 5)
 	{
-		printf("and is greater than 5");
+		printf("and is greater than 5\n");
 	}
 	else if (v != 0 && v < 6)
 	{
-	printf("and is less than 6 and  not 0");
+	printf("and is less than 6 and  not 0\n");
 	}
 	else
 	{
