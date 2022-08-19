@@ -27,19 +27,17 @@ int main(void)
 	v = n % 10;
 	printf("last digit of %d is %d", n, v);
 
-	if (v < 5)
+	if (v > 5)
 	{
-		printf("and is less than 5");
-	}
-	if (n == 0)
-	{
-	printf("and is zero");
+		printf("and is greater than 5");
 	}
 	if (v != 0 && v < 6)
 	{
 	printf("and is less than 6 but not 0");
 	}
-	printf("\n");
-
+	else
+	{
+	printf("and is 0\n");
+	}
 	return (0);
 }
